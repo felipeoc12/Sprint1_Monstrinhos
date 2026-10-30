@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160"><ellipse cx="80" cy="150" rx="44" ry="6" fill="#1B2430" opacity=".12"/>
+<ellipse cx="60" cy="146" rx="12" ry="6" fill="#8A5A2B"/><ellipse cx="100" cy="146" rx="12" ry="6" fill="#8A5A2B"/>
+<path d="M34 54 L18 28 L52 44Z" fill="#D9A867" stroke="#8A5A2B" stroke-width="3" stroke-linejoin="round"/>
+<path d="M126 54 L142 28 L108 44Z" fill="#D9A867" stroke="#8A5A2B" stroke-width="3" stroke-linejoin="round"/>
+<rect x="34" y="44" width="92" height="100" rx="6" fill="#C9965B" stroke="#8A5A2B" stroke-width="3"/>
+<rect x="72" y="44" width="16" height="34" fill="#E8D3A8" opacity=".9"/>
+<rect x="46" y="106" width="68" height="24" rx="4" fill="#1D5FA8"/>
+<text x="80" y="123" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="12" fill="#fff">PAPEL</text>
+<circle cx="60" cy="80" r="12" fill="#fff" stroke="#1B2430" stroke-width="2.5"/><circle cx="61" cy="82" r="6.0" fill="#1B2430"/><circle cx="63.64" cy="79.0" r="2.04" fill="#fff"/><circle cx="100" cy="80" r="12" fill="#fff" stroke="#1B2430" stroke-width="2.5"/><circle cx="99" cy="82" r="6.0" fill="#1B2430"/><circle cx="101.64" cy="79.0" r="2.04" fill="#fff"/>
+<path d="M70 94 Q80 102 90 94" stroke="#1B2430" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+<path d="M80 99 q4 6 8 0" fill="#FF8FA3"/>
+<ellipse cx="48" cy="94" rx="6" ry="4" fill="#FF8FA3" opacity=".6"/><ellipse cx="112" cy="94" rx="6" ry="4" fill="#FF8FA3" opacity=".6"/></svg>

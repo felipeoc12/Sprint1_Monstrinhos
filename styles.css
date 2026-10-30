@@ -1,0 +1,302 @@
+/* =========================================================================
+   Monstrinhos de Juiz de Fora — styles.css
+   Challenge Sprint 1 · Quinteto Codástico
+   App para CELULAR: layout pensado para telas de 360px a 430px
+   ========================================================================= */
+
+/* ----------  Tokens (design tokens)  ---------- */
+:root{
+    /* Cores do jogo */
+    --cor-mata: #1E7A4C;
+    --cor-mata-escura: #0F5C38;
+    --cor-mata-clara: #E3F4E9;
+    --cor-rio: #1D5FA8;
+    --cor-rio-clara: #E4EEFA;
+    --cor-sol: #FFC93C;
+
+    /* Cores dos monstrinhos (fundo do card, tom claro da cor da coleta seletiva) */
+    --fundo-plastico: #FDECEA;
+    --fundo-metal: #FFF4D1;
+    --fundo-papel: #E4EEFA;
+
+    /* Cores de segurança */
+    --cor-alerta: #B3261E;
+    --cor-alerta-escura: #7A1A14;
+
+    /* Neutras */
+    --cor-texto: #1B2430;
+    --cor-texto-secundario: #4A5565;
+    --cor-borda: #D5DDD3;
+    --cor-trilho: #E6EAE4;
+    --fundo-da-pagina: #F4F7F2;
+    --fundo-card: #FFFFFF;
+
+    /* Tipografia */
+    --fonte-titulo: "Fredoka", sans-serif;
+    --fonte-texto: "Nunito", sans-serif;
+    --texto-pequeno: 14px;
+    --texto-normal: 16px;
+    --texto-medio: 20px;
+    --texto-grande: 24px;
+    --texto-titulo: 32px;
+
+    /* Espaçamentos (sempre múltiplos de 4) */
+    --espaco-1: 4px;
+    --espaco-2: 8px;
+    --espaco-3: 16px;
+    --espaco-4: 24px;
+    --espaco-5: 32px;
+
+    /* Radius */
+    --radius-pequeno: 8px;
+    --radius-botao: 12px;
+    --radius-card: 20px;
+    --radius-redondo: 999px;
+
+    /* Sombras */
+    --sombra-card: 0 4px 12px rgba(27, 36, 48, 0.10);
+    --sombra-botao: 0 4px 0 var(--cor-mata-escura);
+    --sombra-botao-perigo: 0 4px 0 var(--cor-alerta-escura);
+
+    /* Celular: tamanho mínimo de área de toque (dedo) */
+    --toque-minimo: 48px;
+}
+
+/* ----------  Base  ---------- */
+body{
+    font-family: var(--fonte-texto);
+    font-size: var(--texto-normal);
+    line-height: 1.5;
+    background-color: var(--fundo-da-pagina);
+    color: var(--cor-texto);
+}
+
+h1,
+h2,
+h3{
+    font-family: var(--fonte-titulo);
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.tela{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: var(--espaco-4) var(--espaco-3);
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaco-5);
+}
+
+.tela__titulo{
+    font-size: var(--texto-titulo);
+}
+
+.tela__subtitulo{
+    color: var(--cor-texto-secundario);
+    font-size: var(--texto-pequeno);
+}
+
+.componente{
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaco-3);
+}
+
+.componente__titulo{
+    font-size: var(--texto-grande);
+}
+
+button:focus-visible{
+    outline: 3px solid var(--cor-rio);
+    outline-offset: 3px;
+}
+
+/* =============================== 1. BOTÃO =============================== */
+
+.btn{
+    min-height: var(--toque-minimo);
+    padding: 12px var(--espaco-4);
+    border: 2px solid transparent;
+    border-radius: var(--radius-botao);
+    font-family: var(--fonte-titulo);
+    font-size: var(--texto-normal);
+    font-weight: 600;
+}
+
+.btn--principal{
+    background-color: var(--cor-mata);
+    color: white;
+    box-shadow: var(--sombra-botao);
+}
+
+.btn--principal:hover{
+    background-color: var(--cor-mata-escura);
+}
+
+.btn--contorno{
+    background-color: var(--fundo-card);
+    border-color: var(--cor-mata);
+    color: var(--cor-mata-escura);
+}
+
+.btn--contorno:hover{
+    background-color: var(--cor-mata-clara);
+}
+
+.btn--perigo{
+    background-color: var(--cor-alerta);
+    color: white;
+    box-shadow: var(--sombra-botao-perigo);
+}
+
+.btn--largo{
+    width: 100%;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaco-3);
+}
+
+/* ========================== 2. CARD DO MONSTRINHO ========================== */
+
+.cards{
+    display: flex;
+    gap: var(--espaco-3);
+}
+
+.card{
+    flex: 1;
+    background-color: var(--fundo-card);
+    border-radius: var(--radius-card);
+    box-shadow: var(--sombra-card);
+    overflow: hidden;
+}
+
+.card__imagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    position: relative;
+}
+
+.card__imagem img{
+    width: 110px;
+    height: 110px;
+}
+
+.card--plastico .card__imagem{
+    background-color: var(--fundo-plastico);
+}
+
+.card--metal .card__imagem{
+    background-color: var(--fundo-metal);
+}
+
+.card--papel .card__imagem{
+    background-color: var(--fundo-papel);
+}
+
+.card__nivel{
+    position: absolute;
+    top: var(--espaco-2);
+    right: var(--espaco-2);
+    background-color: var(--cor-sol);
+    color: var(--cor-texto);
+    font-family: var(--fonte-titulo);
+    font-size: var(--texto-pequeno);
+    font-weight: 600;
+    padding: 0 var(--espaco-2);
+    border-radius: var(--radius-redondo);
+}
+
+.card__conteudo{
+    padding: var(--espaco-3);
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaco-1);
+}
+
+.card__nome{
+    font-size: var(--texto-medio);
+}
+
+.card__tipo{
+    color: var(--cor-texto-secundario);
+    font-size: var(--texto-pequeno);
+}
+
+.hp{
+    margin-top: var(--espaco-2);
+}
+
+.hp__texto{
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--texto-pequeno);
+    font-weight: 700;
+}
+
+.hp__barra{
+    height: 10px;
+    margin-top: var(--espaco-1);
+    background-color: var(--cor-trilho);
+    border-radius: var(--radius-redondo);
+    overflow: hidden;
+}
+
+.hp__preenchido{
+    height: 100%;
+    background-color: var(--cor-mata);
+    border-radius: var(--radius-redondo);
+}
+
+/* ========================= 3. ALERTA DE EMERGÊNCIA ========================= */
+
+.alerta{
+    background-color: var(--fundo-card);
+    border: 2px solid var(--cor-alerta);
+    border-radius: var(--radius-card);
+    box-shadow: var(--sombra-card);
+    overflow: hidden;
+}
+
+.alerta__topo{
+    display: flex;
+    align-items: center;
+    gap: var(--espaco-2);
+    padding: var(--espaco-2) var(--espaco-3);
+    background-color: var(--cor-alerta);
+    color: white;
+    font-family: var(--fonte-titulo);
+    font-size: var(--texto-pequeno);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.alerta__conteudo{
+    padding: var(--espaco-3);
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaco-2);
+}
+
+.alerta__titulo{
+    font-size: var(--texto-medio);
+}
+
+.alerta__meta{
+    color: var(--cor-texto-secundario);
+    font-size: var(--texto-pequeno);
+}
+
+.alerta__acoes{
+    margin-top: var(--espaco-2);
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaco-3);
+}

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monstrinhos de Juiz de Fora — Componentes</title>
+    <!-- CSS RESET -->
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+      button {
+        font: inherit;
+        cursor: pointer;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Nunito:wght@400;700&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="tela">
+      <header>
+        <h1 class="tela__titulo">Monstrinhos de JF</h1>
+        <p class="tela__subtitulo">Componentes · Sprint 1 · Quinteto Codástico</p>
+      </header>
+
+      <!-- ============================ 1. BOTÃO ============================ -->
+      <section class="componente" id="botoes" aria-labelledby="botoes-titulo">
+        <h2 class="componente__titulo" id="botoes-titulo">1. Botão</h2>
+        <div class="botoes">
+          <button class="btn btn--principal btn--largo" type="button">Batalhar</button>
+          <button class="btn btn--contorno btn--largo" type="button">Abrir câmera</button>
+          <button class="btn btn--perigo btn--largo" type="button">Ver rota segura</button>
+        </div>
+      </section>
+
+      <!-- ====================== 2. CARD DO MONSTRINHO ====================== -->
+      <section class="componente" id="cards" aria-labelledby="cards-titulo">
+        <h2 class="componente__titulo" id="cards-titulo">2. Card do Monstrinho</h2>
+        <div class="cards">
+          <article class="card card--plastico">
+            <div class="card__imagem">
+              <img src="img/garrafao.svg" alt="Imagem do monstrinho 'Garrafão'" />
+              <span class="card__nivel">Nv. 7</span>
+            </div>
+            <div class="card__conteudo">
+              <h3 class="card__nome">Garrafão</h3>
+              <p class="card__tipo">Tipo Plástico</p>
+              <div class="hp">
+                <p class="hp__texto"><span>HP</span><span>48 / 60</span></p>
+                <div class="hp__barra">
+                  <div class="hp__preenchido" style="width: 80%"></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card--metal">
+            <div class="card__imagem">
+              <img src="img/latinha.svg" alt="Imagem do monstrinho 'latinha'" />
+              <span class="card__nivel">Nv. 5</span>
+            </div>
+            <div class="card__conteudo">
+              <h3 class="card__nome">Latinha</h3>
+              <p class="card__tipo">Tipo Metal</p>
+              <div class="hp">
+                <p class="hp__texto"><span>HP</span><span>27 / 55</span></p>
+                <div class="hp__barra">
+                  <div class="hp__preenchido" style="width: 50%"></div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ====================== 3. ALERTA DE EMERGÊNCIA ====================== -->
+      <section class="componente" id="alerta" aria-labelledby="alerta-secao">
+        <h2 class="componente__titulo" id="alerta-secao">3. Alerta de Emergência</h2>
+        <article class="alerta" role="alert">
+          <p class="alerta__topo"><span aria-hidden="true">⚠️</span> Emergência · Defesa Civil</p>
+          <div class="alerta__conteudo">
+            <h3 class="alerta__titulo">Risco de deslizamento no seu bairro</h3>
+            <p>Saia agora e vá para o ponto de apoio mais próximo: Escola Municipal (650 m).</p>
+            <p class="alerta__meta">Bairro Linhares · enviado há 2 min</p>
+            <div class="alerta__acoes">
+              <button class="btn btn--perigo btn--largo" type="button">Ver rota segura</button>
+              <button class="btn btn--contorno btn--largo" type="button">Ligar 199</button>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

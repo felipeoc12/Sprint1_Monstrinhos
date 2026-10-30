@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160"><ellipse cx="80" cy="150" rx="44" ry="6" fill="#1B2430" opacity=".12"/>
+<ellipse cx="62" cy="146" rx="12" ry="6" fill="#B3261E"/><ellipse cx="98" cy="146" rx="12" ry="6" fill="#B3261E"/>
+<path d="M44 90 Q26 84 22 66" stroke="#F28C8C" stroke-width="6" stroke-linecap="round" fill="none"/><path d="M116 90 Q134 84 138 66" stroke="#F28C8C" stroke-width="6" stroke-linecap="round" fill="none"/>
+<rect x="66" y="14" width="28" height="14" rx="4" fill="#E53935" stroke="#B3261E" stroke-width="3"/>
+<path d="M68 28 L92 28 L94 42 C116 52 118 62 118 76 L118 132 Q118 144 106 144 L54 144 Q42 144 42 132 L42 76 C42 62 44 52 66 42Z" fill="#CFE8F7" stroke="#5AA0D8" stroke-width="3" stroke-linejoin="round"/>
+<path d="M52 70 L52 128" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".8"/>
+<rect x="42" y="96" width="76" height="26" fill="#E53935"/>
+<text x="80" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="12" fill="#fff">PLÁSTICO</text>
+<circle cx="66" cy="74" r="11" fill="#fff" stroke="#1B2430" stroke-width="2.5"/><circle cx="67" cy="76" r="5.5" fill="#1B2430"/><circle cx="69.42" cy="73.25" r="1.87" fill="#fff"/><circle cx="94" cy="74" r="11" fill="#fff" stroke="#1B2430" stroke-width="2.5"/><circle cx="93" cy="76" r="5.5" fill="#1B2430"/><circle cx="95.42" cy="73.25" r="1.87" fill="#fff"/>
+<path d="M68 130 Q80 140 92 130" stroke="#1B2430" stroke-width="3.5" stroke-linecap="round" fill="none"/></svg>
